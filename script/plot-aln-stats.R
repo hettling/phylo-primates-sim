@@ -11,7 +11,9 @@ for (i in seq(1, length(data))) {
     data[[i]][,'prop_invar'] <- data[[i]][,'prop_invar'] * 100
 }
 
-vars <- colnames(data[[1]])[- ( which(colnames(data[[1]]) %in% c('file', 'species')))]
+## define properties to plot 
+vars = c('nchar', 'gaps_per_seq', 'gap_freq', 'prop_invar', 'ntax')
+## vars <- colnames(data[[1]])[- ( which(colnames(data[[1]]) %in% c('file', 'species')))]
 
 pdf('alnstats.pdf', width=12, height=10)
 par(mfrow=c(4,3))
@@ -36,7 +38,7 @@ mapping['nchar', 'title'] <- 'Number of nucleotides per sequence'
 mapping['nchar', 'ylab'] <- 'nucleotides'
 mapping['ntax', 'title'] <- 'Number of taxa in alignment'
 mapping['ntax', 'ylab'] <- 'taxa'
-mapping['prop_invar', 'title'] <- '% of invariant sites in alignment'
+mapping['prop_invar', 'title'] <- '% of invariant sites per alignment'
 mapping['prop_invar', 'ylab'] <- '%'
 
 
@@ -64,7 +66,7 @@ for (i in seq(1, length(data))) {
     df <- data.frame('species'=unique.specs, 'counts'=sapply(unique.specs, function(x)sum(specs==x)))
     spec.stats[[i]] <- df
 }
-boxplot(lapply(spec.stats, '[[', 'counts'), main="Number of alignments per species", ylab="alignments", names=names(data), cex.axis=1.5)
+boxplot(lapply(spec.stats, '[[', 'counts'), main="Number of alignments per species", ylab="alignments", names=names(data), cex.axis=1.2, cex.main=1.5, cex.lab=1.5)
 
 
 dev.off()
