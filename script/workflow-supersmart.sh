@@ -28,7 +28,7 @@ BACKBONE='backbone-examl.dnd'
 
 smrt orthologize -i aligned-smrt-inserted.txt -w $WORKDIR
 smrt bbmerge -t taxa-replicated.tsv -a merged.txt -w $WORKDIR
-smrt bbinfer -i exabayes -s supermatrix.phy -o $BACKBONE -w $WORKDIR
+smrt bbinfer -i examl -b 100 -s supermatrix.phy -o $BACKBONE -w $WORKDIR
 smrt bbreroot -b $BACKBONE -t taxa-replicated.tsv -w $WORKDIR
 smrt bbcalibrate -t backbone-rerooted.dnd -f $FOSSILS -w $WORKDIR
 smrt consense -i chronogram.dnd -w $WORKDIR
