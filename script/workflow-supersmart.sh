@@ -27,15 +27,33 @@ FOSSILS='fossils.tsv'
 BACKBONE='backbone-examl.dnd'
 SUPERMATRIX='supermatrix.phy'
 
-smrt orthologize -i aligned-smrt-inserted.txt -w $WORKDIR -l orthologize.log
-smrt bbmerge -t taxa-replicated.tsv -a merged.txt -o $SUPERMATRIX -w $WORKDIR -l bbmerge.log
-smrt-utils markergraph -i markers-backbone.tsv -o markers-backbone.dot 
+if [ ! -e "$WORKDIR/merged.txt" ]; then
+    smrt orthologize -i aligned-smrt-inserted.txt -w $WORKDIR -l orthologize.log
+fi
 
-smrt bbinfer -i examl -b 100 -s supermatrix.phy -m -o $BACKBONE -w $WORKDIR -l bbinfer.log
+if [ ! -e "$WORKDIR/supermatrix.phy" ]; then
+    smrt bbmerge -t taxa-replicated.tsv -a merged.txt -o $SUPERMATRIX -w $WORKDIR -l bbmerge.log
+fi
 
-smrt bbreroot -b $BACKBONE -t taxa-replicated.tsv -p tree-replicated.dnd -w $WORKDIR
-smrt bbcalibrate -t backbone-rerooted.dnd -f $FOSSILS -w $WORKDIR
-smrt consense -i chronogram.dnd -w $WORKDIR
+if [ ! -e "$WORKDIR/markers-backbone.dot" ]; then
+    smrt-utils markergraph -i markers-backbone.tsv -o markers-backbone.dot 
+fi
+
+if [ ! -e "$WORKDIR/$BACKBONE" ]; then
+    smrt bbinfer -i examl -b 100 -s supermatrix.phy -m -o $BACKBONE -w $WORKDIR -l bbinfer.log
+fi
+
+if [ ! -e "$WORKDIR/backbone-rerooted.dnd" ]; then
+    smrt bbreroot -b $BACKBONE -t taxa-replicated.tsv -p tree-replicated.dnd -w $WORKDIR
+fi
+
+if [ ! -e "$WORKDIR/chronogram.dnd" ]; then
+    smrt bbcalibrate -t backbone-rerooted.dnd -f $FOSSILS -w $WORKDIR
+fi
+
+if [ ! -e "$WORKDIR/consensus.nex" ]; then
+    smrt consense -i chronogram.dnd -w $WORKDIR
+fi
 
 smrt bbdecompose -b consensus.nex -a aligned-smrt-inserted.txt -t taxa-replicated.tsv -w $WORKDIR
 smrt clademerge --enrich -w $WORKDIR
