@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# This script runs the SUPERSMART pipeline  
+# This script runs the SUPERSMART pipeline
 # on a synthetic dataset. The tree infered from this tree inference
 # can then directly be compared to the 'original' replicated tree. Thereby,
-# the performance of the SUPERSMART method can be validated. 
+# the performance of the SUPERSMART method can be validated.
 
-# parse command-line arguments for simulation directory 
+# parse command-line arguments for simulation directory
 SIMNAME=$1
-if [ -z "$SIMNAME" ]; then       
+if [ -z "$SIMNAME" ]; then
         SIMNAME='simulations'
 fi
 
 # define dirs and directories
-WORKDIR="$PWD/results/$SIMNAME" 
+WORKDIR="$PWD/results/$SIMNAME"
 
 # run the supersmart pipeline in the directory of the replicated dataset
 export SUPERSMART_BACKBONE_MAX_DISTANCE="0.2"
@@ -36,7 +36,7 @@ if [ ! -e "$WORKDIR/supermatrix.phy" ]; then
 fi
 
 if [ ! -e "$WORKDIR/markers-backbone.dot" ]; then
-    smrt-utils markergraph -i markers-backbone.tsv -o markers-backbone.dot 
+    smrt-utils markergraph -i markers-backbone.tsv -o markers-backbone.dot -w $WORKDIR
 fi
 
 if [ ! -e "$WORKDIR/$BACKBONE" ]; then
