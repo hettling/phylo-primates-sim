@@ -27,19 +27,20 @@ FOSSILS='fossils.tsv'
 BACKBONE='backbone-examl.dnd'
 SUPERMATRIX='supermatrix.phy'
 
-smrt orthologize -i aligned-smrt-inserted.txt -w $WORKDIR
-smrt bbmerge -t taxa-replicated.tsv -a merged.txt -o $SUPERMATRIX -w $WORKDIR
-smrt-utils markergraph -i markers-backbone.tsv -o markers-backbone.dot
+smrt orthologize -i aligned-smrt-inserted.txt -w $WORKDIR -l orthologize.log
+smrt bbmerge -t taxa-replicated.tsv -a merged.txt -o $SUPERMATRIX -w $WORKDIR -l bbmerge.log
+smrt-utils markergraph -i markers-backbone.tsv -o markers-backbone.dot 
 
-smrt bbinfer -i examl -b 100 -s supermatrix.phy -m -o $BACKBONE -w $WORKDIR
-smrt bbreroot -b $BACKBONE -t taxa-replicated.tsv -w $WORKDIR
+smrt bbinfer -i examl -b 100 -s supermatrix.phy -m -o $BACKBONE -w $WORKDIR -l bbinfer.log
+
+smrt bbreroot -b $BACKBONE -t taxa-replicated.tsv -p tree-replicated.dnd -w $WORKDIR
 smrt bbcalibrate -t backbone-rerooted.dnd -f $FOSSILS -w $WORKDIR
 smrt consense -i chronogram.dnd -w $WORKDIR
 
 smrt bbdecompose -b consensus.nex -a aligned-smrt-inserted.txt -t taxa-replicated.tsv -w $WORKDIR
 smrt clademerge --enrich -w $WORKDIR
 smrt cladeinfer --ngens=15_000_000 --sfreq=1000 --lfreq=1000 -w $WORKDIR
-smrt cladegraft -w $WORKDIR
+smrt cladegraft -w $WORKDIR -o 'tree-reestimated.nex'
 
 # clean database from artificial sequences
 #sqlite3 $SUPERSMART_HOME/data/phylota.sqlite 'delete from seqs where acc like "$WORKDIR%"'
