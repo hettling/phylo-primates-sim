@@ -1,4 +1,4 @@
-stats.files <- commandArgs(TRUE)
+stats.files <- c("results/alignment-stats-orig.tsv", "results/PRIMATES-1/alignment-stats.tsv", "results/PRIMATES-2/alignment-stats.tsv")#commandArgs(TRUE)
 
 data <- lapply(stats.files, read.table, header=T)
 
@@ -11,12 +11,12 @@ for (i in seq(1, length(data))) {
     data[[i]][,'prop_invar'] <- data[[i]][,'prop_invar'] * 100
 }
 
-## define properties to plot 
-vars = c('nchar', 'gaps_per_seq', 'gap_freq', 'prop_invar', 'ntax')
-## vars <- colnames(data[[1]])[- ( which(colnames(data[[1]]) %in% c('file', 'species')))]
+## define properties to plot
+##vars = c('nchar', 'gaps_per_seq', 'gap_freq', 'prop_invar', 'ntax')
+ vars <- colnames(data[[1]])[- ( which(colnames(data[[1]]) %in% c('file', 'species')))]
 
 pdf('alnstats.pdf', width=12, height=10)
-par(mfrow=c(4,3))
+par(mfrow=c(5,4))
 
 # make name mapping for plot titles and axis labels
 mapping <- data.frame(row.names=colnames(data[[1]]))
@@ -40,22 +40,26 @@ mapping['ntax', 'title'] <- 'Number of taxa in alignment'
 mapping['ntax', 'ylab'] <- 'taxa'
 mapping['prop_invar', 'title'] <- '% of invariant sites per alignment'
 mapping['prop_invar', 'ylab'] <- '%'
+mapping['ident_pairs', 'title'] <- 'Identical sequences in alignment'
+mapping['ident_pairs', 'ylab'] <- 'number of identical pairs'
+mapping['avg_dist', 'title'] <- 'average distance in alignments'
+mapping['avg_dist', 'ylab'] <- 'relative distance'
 
 
 
 ## make boxplots for all valiables
-for ( v in vars ) {    
+for ( v in vars ) {
     a <- boxplot( lapply(data, '[[', v), main=mapping[v, 'title'], ylab=mapping[v, 'ylab'], names=names(data), outline=F, col=c('grey', rep('white', length(data)-1)), cex.main=1.5, cex.axis=1.2, cex.lab=1.5)
 
     ## code for plotting histograms
     ##    colors <- sapply(palette(), scales::alpha, .5)
-    ##    for (i in seq(1, length(data))) { 
+    ##    for (i in seq(1, length(data))) {
     ##        hist( data[[i]][,v], prob=T, add=!i==1, col=colors[i], breaks=20)
     ##    }
     ##    colors <- palette()
-    ##    for (i in seq(1, length(data))) {        
+    ##    for (i in seq(1, length(data))) {
     ##        lines( density(data[[i]][,v], adjust=2), col=colors[i] )
-    ##    }   
+    ##    }
 }
 
 ## calculate and plot number of alignments per species and story in list
