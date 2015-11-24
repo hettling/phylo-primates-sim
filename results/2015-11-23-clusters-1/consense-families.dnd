@@ -1,0 +1,239 @@
+#NEXUS
+
+BEGIN TAXA;
+[! Taxa block written by Bio::Phylo::Taxa 0.58 on Mon Nov 23 16:50:53 2015 ]
+	
+        DIMENSIONS NTAX=111;
+        TAXLABELS
+		'Aotidae-Aotus_azarai'
+		'Aotidae-Aotus_nancymaae'
+		'Atelidae-Alouatta_palliata'
+		'Atelidae-Alouatta_sara'
+		'Atelidae-Ateles_belzebuth'
+		'Atelidae-Ateles_hybridus'
+		'Atelidae-Brachyteles_arachnoides'
+		'Atelidae-Brachyteles_hypoxanthus'
+		'Atelidae-Lagothrix_cana'
+		'Atelidae-Lagothrix_lagotricha'
+		'Cebidae-Callimico_goeldii'
+		'Cebidae-Callithrix_jacchus'
+		'Cebidae-Callithrix_pygmaea'
+		'Cebidae-Cebus_olivaceus'
+		'Cebidae-Cebus_xanthosternos'
+		'Cebidae-Leontopithecus_chrysomelas'
+		'Cebidae-Leontopithecus_rosalia'
+		'Cebidae-Saguinus_labiatus'
+		'Cebidae-Saguinus_midas'
+		'Cebidae-Saimiri_boliviensis'
+		'Cebidae-Saimiri_ustus'
+		'Cercopithecidae-Cercocebus_agilis'
+		'Cercopithecidae-Cercocebus_atys'
+		'Cercopithecidae-Cercopithecus_hamlyni'
+		'Cercopithecidae-Cercopithecus_preussi'
+		'Cercopithecidae-Chlorocebus_aethiops'
+		'Cercopithecidae-Chlorocebus_cynosuros'
+		'Cercopithecidae-Colobus_guereza'
+		'Cercopithecidae-Colobus_polykomos'
+		'Cercopithecidae-Erythrocebus_patas'
+		'Cercopithecidae-Lophocebus_albigena'
+		'Cercopithecidae-Lophocebus_aterrimus'
+		'Cercopithecidae-Macaca_sylvanus'
+		'Cercopithecidae-Macaca_tonkeana'
+		'Cercopithecidae-Mandrillus_leucophaeus'
+		'Cercopithecidae-Mandrillus_sphinx'
+		'Cercopithecidae-Miopithecus_talapoin'
+		'Cercopithecidae-Nasalis_larvatus'
+		'Cercopithecidae-Papio_anubis'
+		'Cercopithecidae-Papio_papio'
+		'Cercopithecidae-Piliocolobus_badius'
+		'Cercopithecidae-Presbytis_comata'
+		'Cercopithecidae-Presbytis_melalophos'
+		'Cercopithecidae-Procolobus_verus'
+		'Cercopithecidae-Pygathrix_cinerea'
+		'Cercopithecidae-Pygathrix_nigripes'
+		'Cercopithecidae-Rhinopithecus_bieti'
+		'Cercopithecidae-Rhinopithecus_roxellana'
+		'Cercopithecidae-Rungwecebus_kipunji'
+		'Cercopithecidae-Semnopithecus_entellus'
+		'Cercopithecidae-Semnopithecus_hector'
+		'Cercopithecidae-Simias_concolor'
+		'Cercopithecidae-Theropithecus_gelada'
+		'Cercopithecidae-Trachypithecus_auratus'
+		'Cercopithecidae-Trachypithecus_delacouri'
+		'Cheirogaleidae-Cheirogaleus_crossleyi'
+		'Cheirogaleidae-Cheirogaleus_major'
+		'Cheirogaleidae-Microcebus_murinus'
+		'Cheirogaleidae-Microcebus_rufus'
+		'Cheirogaleidae-Mirza_coquereli'
+		'Cheirogaleidae-Mirza_zaza'
+		'Cheirogaleidae-Phaner_furcifer'
+		'Daubentoniidae-Daubentonia_madagascariensis'
+		'Galagidae-Euoticus_elegantulus'
+		'Galagidae-Galago_alleni'
+		'Galagidae-Galago_moholi'
+		'Galagidae-Galagoides_demidoff'
+		'Galagidae-Galagoides_zanzibaricus'
+		'Galagidae-Otolemur_crassicaudatus'
+		'Galagidae-Otolemur_garnettii'
+		'Hominidae-Gorilla_beringei'
+		'Hominidae-Gorilla_gorilla'
+		'Hominidae-Homo_sapiens'
+		'Hominidae-Pan_paniscus'
+		'Hominidae-Pan_troglodytes'
+		'Hominidae-Pongo_abelii'
+		'Hominidae-Pongo_pygmaeus'
+		'Hylobatidae-Hoolock_leuconedys'
+		'Hylobatidae-Nomascus_concolor'
+		'Hylobatidae-Nomascus_gabriellae'
+		'Hylobatidae-Symphalangus_syndactylus'
+		'Indriidae-Avahi_laniger'
+		'Indriidae-Avahi_occidentalis'
+		'Indriidae-Indri_indri'
+		'Indriidae-Propithecus_tattersalli'
+		'Indriidae-Propithecus_verreauxi'
+		'Lemuridae-Eulemur_albifrons'
+		'Lemuridae-Eulemur_coronatus'
+		'Lemuridae-Hapalemur_aureus'
+		'Lemuridae-Hapalemur_simus'
+		'Lemuridae-Lemur_catta'
+		'Lemuridae-Varecia_rubra'
+		'Lemuridae-Varecia_variegata'
+		'Lepilemuridae-Lepilemur_ankaranensis'
+		'Lepilemuridae-Lepilemur_jamesi'
+		'Lorisidae-Arctocebus_calabarensis'
+		'Lorisidae-Loris_tardigradus'
+		'Lorisidae-Nycticebus_bengalensis'
+		'Lorisidae-Nycticebus_pygmaeus'
+		'Lorisidae-Perodicticus_potto'
+		'Pitheciidae-Cacajao_calvus'
+		'Pitheciidae-Cacajao_melanocephalus'
+		'Pitheciidae-Cacajao_rubicundus'
+		'Pitheciidae-Callicebus_cupreus'
+		'Pitheciidae-Callicebus_moloch'
+		'Pitheciidae-Chiropotes_albinasus'
+		'Pitheciidae-Chiropotes_satanas'
+		'Pitheciidae-Pithecia_irrorata'
+		'Pitheciidae-Pithecia_pithecia'
+		'Tarsiidae-Tarsius_syrichta'
+		'Tarsiidae-Tarsius_tarsier'
+        ;
+END;
+BEGIN TREES;
+[! Trees block written by Bio::Phylo::Forest 0.58 on Mon Nov 23 16:50:53 2015 ]
+	TRANSLATE
+		1 'Cheirogaleidae-Phaner_furcifer',
+		2 'Hylobatidae-Hoolock_leuconedys',
+		3 'Atelidae-Ateles_hybridus',
+		4 'Atelidae-Ateles_belzebuth',
+		5 'Cercopithecidae-Miopithecus_talapoin',
+		6 'Tarsiidae-Tarsius_tarsier',
+		7 'Tarsiidae-Tarsius_syrichta',
+		8 'Lemuridae-Varecia_rubra',
+		9 'Lemuridae-Varecia_variegata',
+		10 'Hominidae-Gorilla_beringei',
+		11 'Hominidae-Gorilla_gorilla',
+		12 'Atelidae-Alouatta_sara',
+		13 'Atelidae-Alouatta_palliata',
+		14 'Galagidae-Euoticus_elegantulus',
+		15 'Atelidae-Brachyteles_hypoxanthus',
+		16 'Atelidae-Brachyteles_arachnoides',
+		17 'Lemuridae-Lemur_catta',
+		18 'Lorisidae-Loris_tardigradus',
+		19 'Lemuridae-Hapalemur_simus',
+		20 'Lemuridae-Hapalemur_aureus',
+		21 'Lorisidae-Nycticebus_bengalensis',
+		22 'Lorisidae-Nycticebus_pygmaeus',
+		23 'Hylobatidae-Symphalangus_syndactylus',
+		24 'Lemuridae-Eulemur_albifrons',
+		25 'Lemuridae-Eulemur_coronatus',
+		26 'Lorisidae-Arctocebus_calabarensis',
+		27 'Galagidae-Galagoides_demidoff',
+		28 'Cercopithecidae-Procolobus_verus',
+		29 'Cercopithecidae-Presbytis_melalophos',
+		30 'Cercopithecidae-Presbytis_comata',
+		31 'Cercopithecidae-Trachypithecus_auratus',
+		32 'Cercopithecidae-Trachypithecus_delacouri',
+		33 'Cercopithecidae-Papio_papio',
+		34 'Cebidae-Callimico_goeldii',
+		35 'Cheirogaleidae-Microcebus_rufus',
+		36 'Cheirogaleidae-Microcebus_murinus',
+		37 'Pitheciidae-Pithecia_pithecia',
+		38 'Pitheciidae-Pithecia_irrorata',
+		39 'Cercopithecidae-Macaca_tonkeana',
+		40 'Cercopithecidae-Macaca_sylvanus',
+		41 'Cheirogaleidae-Mirza_zaza',
+		42 'Cheirogaleidae-Mirza_coquereli',
+		43 'Galagidae-Galago_moholi',
+		44 'Hominidae-Homo_sapiens',
+		45 'Cercopithecidae-Papio_anubis',
+		46 'Lepilemuridae-Lepilemur_ankaranensis',
+		47 'Lepilemuridae-Lepilemur_jamesi',
+		48 'Cercopithecidae-Lophocebus_albigena',
+		49 'Cercopithecidae-Lophocebus_aterrimus',
+		50 'Cercopithecidae-Rungwecebus_kipunji',
+		51 'Cercopithecidae-Theropithecus_gelada',
+		52 'Aotidae-Aotus_azarai',
+		53 'Aotidae-Aotus_nancymaae',
+		54 'Galagidae-Otolemur_crassicaudatus',
+		55 'Daubentoniidae-Daubentonia_madagascariensis',
+		56 'Cebidae-Callithrix_jacchus',
+		57 'Cebidae-Callithrix_pygmaea',
+		58 'Cercopithecidae-Semnopithecus_hector',
+		59 'Cercopithecidae-Semnopithecus_entellus',
+		60 'Cercopithecidae-Rhinopithecus_bieti',
+		61 'Cercopithecidae-Rhinopithecus_roxellana',
+		62 'Cercopithecidae-Simias_concolor',
+		63 'Cebidae-Leontopithecus_rosalia',
+		64 'Cebidae-Leontopithecus_chrysomelas',
+		65 'Cercopithecidae-Mandrillus_leucophaeus',
+		66 'Cercopithecidae-Mandrillus_sphinx',
+		67 'Hylobatidae-Nomascus_concolor',
+		68 'Hylobatidae-Nomascus_gabriellae',
+		69 'Cebidae-Saimiri_ustus',
+		70 'Hominidae-Pongo_pygmaeus',
+		71 'Hominidae-Pongo_abelii',
+		72 'Cebidae-Saguinus_midas',
+		73 'Cebidae-Saguinus_labiatus',
+		74 'Cercopithecidae-Pygathrix_nigripes',
+		75 'Cercopithecidae-Pygathrix_cinerea',
+		76 'Cebidae-Cebus_xanthosternos',
+		77 'Cebidae-Cebus_olivaceus',
+		78 'Cercopithecidae-Cercocebus_agilis',
+		79 'Cercopithecidae-Cercocebus_atys',
+		80 'Galagidae-Otolemur_garnettii',
+		81 'Cercopithecidae-Piliocolobus_badius',
+		82 'Cercopithecidae-Erythrocebus_patas',
+		83 'Cebidae-Saimiri_boliviensis',
+		84 'Cercopithecidae-Colobus_polykomos',
+		85 'Pitheciidae-Callicebus_cupreus',
+		86 'Pitheciidae-Callicebus_moloch',
+		87 'Galagidae-Galagoides_zanzibaricus',
+		88 'Galagidae-Galago_alleni',
+		89 'Cercopithecidae-Cercopithecus_hamlyni',
+		90 'Pitheciidae-Cacajao_melanocephalus',
+		91 'Pitheciidae-Cacajao_calvus',
+		92 'Cercopithecidae-Nasalis_larvatus',
+		93 'Lorisidae-Perodicticus_potto',
+		94 'Cercopithecidae-Colobus_guereza',
+		95 'Atelidae-Lagothrix_lagotricha',
+		96 'Atelidae-Lagothrix_cana',
+		97 'Indriidae-Indri_indri',
+		98 'Hominidae-Pan_paniscus',
+		99 'Hominidae-Pan_troglodytes',
+		100 'Cercopithecidae-Chlorocebus_aethiops',
+		101 'Pitheciidae-Cacajao_rubicundus',
+		102 'Indriidae-Avahi_laniger',
+		103 'Indriidae-Avahi_occidentalis',
+		104 'Indriidae-Propithecus_verreauxi',
+		105 'Indriidae-Propithecus_tattersalli',
+		106 'Cheirogaleidae-Cheirogaleus_crossleyi',
+		107 'Cheirogaleidae-Cheirogaleus_major',
+		108 'Cercopithecidae-Cercopithecus_preussi',
+		109 'Cercopithecidae-Chlorocebus_cynosuros',
+		110 'Pitheciidae-Chiropotes_albinasus',
+		111 'Pitheciidae-Chiropotes_satanas';
+	TREE Tree2 = [&R] (((1:72.097830,(2:52.841655,((15:4.362540,16:4.362540):43.787760,((17:34.299154,18:34.299155):0.128654,(19:14.673975,20:14.673975):19.753833):13.722492):4.691355):19.256175):5.368253,((3:3.158548,4:3.158548):65.044190,(5:66.266766,(((21:35.860915,22:35.860915):14.055885,((26:9.708186,(41:0.336329,42:0.336329):9.371857):33.168182,((43:24.773301,(54:20.671043,(80:20.014972,(87:11.188967,88:11.188967):8.826005):0.656072):4.102258):7.138126,27:31.911427):10.964940):7.040433):15.228579,((((44:50.189308,(55[&name=Daubentoniidae]:46.560218,(81:36.609367,((100:9.540734,(108:7.501350,109:7.501350):2.039384):16.032870,89:25.573604):11.035763):9.950850):3.629091):0.233485,28:50.422793):2.102939,(((56:13.172539,57:13.172539):1.375552,(58:1.213938,59:1.213938):13.334153):15.788263,((60:13.311366,61:13.311366):13.977769,(62:19.916501,((90:7.107569,91:7.107569):3.286467,(92:9.760839,(101:1.971524,(110:0.608270,111:0.608270):1.363254):7.789316):0.633196):9.522465):7.372634):3.047219):22.189378):1.467325,(23:16.830124,(29:5.411338,30:5.411338):11.418786):37.162933):11.152322):1.121387):1.935972):9.263344):0.033918,(((6:7.217145,7:7.217145)[&name=Tarsiidae]:15.788989,((10:4.513959,11:4.513959):12.463895,(12:6.906051,13:6.906051):10.071803):6.028280):50.422084,((((((31:2.547775,32:2.547775):18.125660,((45:12.886498,(63:1.191340,64:1.191340):11.695159):0.215074,33:13.101573):7.571862):15.931366,(24:18.595173,25:18.595173):18.009628):18.113528,((((46:15.965213,47:15.965213)[&name=Lepilemuridae]:22.487636,34:38.452849):5.864398,(35:38.180395,36:38.180395):6.136851):5.560041,(((48:4.433986,49:4.433986):4.374980,((65:4.727504,66:4.727504):3.202269,(67:0.816207,68:0.816207):7.113565):0.879193):6.889064,(37:1.925101,38:1.925101):13.772928):34.179258):4.841041):10.391522,(((((50:7.604876,51:7.604876):31.768356,((69:16.962569,(82:16.046268,83:16.046268):0.916301):5.620215,(70:0.264942,71:0.264942):22.317842):16.790449):20.910439,((52:11.363302,53:11.363302)[&name=Aotidae]:22.353437,((72:21.098728,73:21.098728):2.913583,(((93:4.599891,94:4.599891):3.819244,84:8.419136):7.533870,(85:11.877392,86:11.877392):4.075614):8.059305):9.704428):26.566932):3.858964,((39:33.830536,40:33.830536):18.642597,(((74:0.371233,75:0.371233):11.326527,(76:7.318093,77:7.318093):4.379667):32.466111,((((95:1.480989,96:1.480989):40.393560,(97:41.287095,(102:27.009101,103:27.009101):14.277994):0.587454):1.833074,(((104:17.499035,105:17.499035):8.890892,(106:20.371477,107:20.371477):6.018450):12.224477,(98:1.211592,99:1.211592):37.402811):5.093219)[&name=Indriidae]:0.347362,(78:15.448644,79:15.448644):28.606340):0.108886):8.309262):11.669502):0.723616,14:64.866251):0.243600):2.684440,(8:15.862941,9:15.862941):51.931349):5.633927):4.071783)[&name=Lorisidae];
+END;
+BEGIN NOTES;
+[! Notes block written by Bio::Phylo::Project 0.58 on Mon Nov 23 16:50:53 2015 ]
+END;
