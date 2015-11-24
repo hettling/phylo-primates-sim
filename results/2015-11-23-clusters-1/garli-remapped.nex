@@ -1,0 +1,473 @@
+#NEXUS
+
+BEGIN TAXA;
+[! Taxa block written by Bio::Phylo::Taxa 0.58 on Tue Nov 24 14:13:42 2015 ]
+	
+        DIMENSIONS NTAX=228;
+        TAXLABELS
+		100224
+		100487
+		100937
+		101278
+		1090896
+		111173
+		111174
+		1131379
+		1194336
+		121123
+		1215604
+		122222
+		122223
+		122231
+		122232
+		122246
+		129801
+		132108
+		13514
+		13515
+		13557
+		143283
+		143351
+		143352
+		143353
+		143354
+		147649
+		147650
+		164648
+		170207
+		174599
+		182253
+		182256
+		198627
+		202457
+		208091
+		221704
+		222416
+		224329
+		230833
+		236272
+		236274
+		236275
+		255237
+		261734
+		261736
+		261739
+		261741
+		263448
+		27679
+		29089
+		291259
+		292213
+		30586
+		30588
+		30589
+		30590
+		30591
+		30594
+		30596
+		30598
+		30601
+		30602
+		30608
+		30609
+		30611
+		310352
+		310932
+		310934
+		31869
+		33548
+		339999
+		342401
+		342807
+		343908
+		34825
+		34827
+		34828
+		34829
+		34830
+		356665
+		356666
+		36223
+		36225
+		36226
+		36227
+		36228
+		36229
+		36231
+		371039
+		37293
+		37295
+		373033
+		37588
+		379532
+		402888
+		40843
+		412750
+		412751
+		412752
+		415757
+		43147
+		43777
+		43778
+		43780
+		460675
+		465717
+		47177
+		47180
+		486960
+		48842
+		499232
+		52232
+		54131
+		54133
+		543559
+		54600
+		54601
+		54602
+		548481
+		554167
+		57175
+		57176
+		57374
+		57375
+		57377
+		57378
+		58710
+		593543
+		60711
+		61621
+		61622
+		61852
+		61853
+		66062
+		662464
+		66265
+		666519
+		693712
+		70814
+		70825
+		70927
+		70928
+		752538
+		75566
+		75567
+		75569
+		767357
+		78449
+		78451
+		78452
+		78454
+		83281
+		859983
+		864580
+		864581
+		867332
+		867333
+		867334
+		867363
+		867377
+		867382
+		88029
+		89672
+		90381
+		90382
+		90383
+		90384
+		90385
+		9447
+		9455
+		9460
+		9463
+		9465
+		9468
+		9470
+		9472
+		9478
+		9482
+		9483
+		9487
+		9488
+		9490
+		9491
+		9493
+		9495
+		9502
+		9505
+		9507
+		9508
+		9509
+		9510
+		9514
+		9515
+		9516
+		9519
+		9521
+		9523
+		9525
+		9530
+		9531
+		9532
+		9534
+		9536
+		9538
+		9540
+		9542
+		9544
+		9545
+		9546
+		9548
+		9551
+		9552
+		9555
+		9556
+		9557
+		9561
+		9565
+		9568
+		9572
+		9586
+		9590
+		9593
+		9597
+		9598
+		9600
+		9601
+		9606
+        ;
+END;
+BEGIN TREES;
+[! Trees block written by Bio::Phylo::Forest 0.58 on Tue Nov 24 14:13:43 2015 ]
+	TRANSLATE
+		1 Cercopithecus_lhoesti,
+		2 Cercopithecus_wolfi,
+		3 Cercopithecus_solatus,
+		4 Cercopithecus_preussi,
+		5 Chlorocebus_cynosuros,
+		6 Cercopithecus_mitis,
+		7 Cercopithecus_ascanius,
+		8 Chlorocebus_sabaeus,
+		9 Cercopithecus_petaurista,
+		10 Cercopithecus_mona,
+		11 Cercopithecus_neglectus,
+		12 Chlorocebus_aethiops,
+		13 Piliocolobus_badius,
+		14 Cercopithecus_hamlyni,
+		15 Cercopithecus_nictitans,
+		16 Daubentonia_madagascariensis,
+		17 Homo_sapiens,
+		18 Procolobus_verus,
+		19 Symphalangus_syndactylus,
+		20 Phaner_furcifer,
+		21 Presbytis_comata,
+		22 Presbytis_melalophos,
+		23 Semnopithecus_entellus,
+		24 Semnopithecus_hector,
+		25 Callithrix_mauesi,
+		26 Callithrix_kuhlii,
+		27 Rhinopithecus_roxellana,
+		28 Simias_concolor,
+		29 Ateles_hybridus,
+		30 Ateles_paniscus,
+		31 Ateles_fusciceps,
+		32 Hoolock_leuconedys,
+		33 Miopithecus_talapoin,
+		34 Arctocebus_calabarensis,
+		35 Nycticebus_bengalensis,
+		36 Nycticebus_menagensis,
+		37 Nycticebus_pygmaeus,
+		38 Callithrix_pygmaea,
+		39 Rhinopithecus_strykeri,
+		40 Nasalis_larvatus,
+		41 Ateles_geoffroyi,
+		42 Ateles_belzebuth,
+		43 Galagoides_demidoff,
+		44 Mirza_zaza,
+		45 Mirza_coquereli,
+		46 Nycticebus_javanicus,
+		47 Nycticebus_coucang,
+		48 Callithrix_penicillata,
+		49 Callithrix_humilis,
+		50 Callithrix_humeralifera,
+		51 Callithrix_emiliae,
+		52 Callithrix_argentata,
+		53 Rhinopithecus_bieti,
+		54 Cacajao_calvus,
+		55 Loris_tardigradus,
+		56 Brachyteles_hypoxanthus,
+		57 Brachyteles_arachnoides,
+		58 Tarsius_tarsier,
+		59 Tarsius_syrichta,
+		60 Varecia_rubra,
+		61 Varecia_variegata,
+		62 Galago_moholi,
+		63 Callithrix_jacchus,
+		64 Rhinopithecus_brelichi,
+		65 Rhinopithecus_avunculus,
+		66 Cacajao_melanocephalus,
+		67 Lemur_catta,
+		68 Alouatta_sara,
+		69 Gorilla_beringei,
+		70 Gorilla_gorilla,
+		71 Callithrix_melanura,
+		72 Callithrix_aurita,
+		73 Cacajao_rubicundus,
+		74 Hapalemur_occidentalis,
+		75 Otolemur_crassicaudatus,
+		76 Galago_gallarum,
+		77 Chiropotes_satanas,
+		78 Chiropotes_albinasus,
+		79 Hapalemur_griseus,
+		80 Alouatta_pigra,
+		81 Alouatta_guariba,
+		82 Alouatta_palliata,
+		83 Galago_senegalensis,
+		84 Otolemur_garnettii,
+		85 Galagoides_zanzibaricus,
+		86 Galago_alleni,
+		87 Hapalemur_simus,
+		88 Hapalemur_aureus,
+		89 Alouatta_caraya,
+		90 Alouatta_belzebul,
+		91 Macaca_brunnescens,
+		92 Theropithecus_gelada,
+		93 Rungwecebus_kipunji,
+		94 Eulemur_macaco,
+		95 Eulemur_coronatus,
+		96 Eulemur_albifrons,
+		97 Eulemur_mongoz,
+		98 Trachypithecus_auratus,
+		99 Trachypithecus_delacouri,
+		100 Pithecia_irrorata,
+		101 Pithecia_pithecia,
+		102 Callimico_goeldii,
+		103 Avahi_occidentalis,
+		104 Avahi_laniger,
+		105 Macaca_silenus,
+		106 Macaca_maura,
+		107 Macaca_radiata,
+		108 Macaca_tonkeana,
+		109 Macaca_nigrescens,
+		110 Pongo_abelii,
+		111 Pongo_pygmaeus,
+		112 Aotus_azarai,
+		113 Aotus_trivirgatus,
+		114 Eulemur_rubriventer,
+		115 Eulemur_fulvus,
+		116 Eulemur_rufus,
+		117 Leontopithecus_rosalia,
+		118 Leontopithecus_chrysomelas,
+		119 Leontopithecus_chrysopygus,
+		120 Lophocebus_aterrimus,
+		121 Lophocebus_albigena,
+		122 Lepilemur_ankaranensis,
+		123 Lepilemur_jamesi,
+		124 Microcebus_sambiranensis,
+		125 Pygathrix_nemaeus,
+		126 Pan_troglodytes,
+		127 Pan_paniscus,
+		128 Cercocebus_galeritus,
+		129 Cercocebus_atys,
+		130 Cercocebus_torquatus,
+		131 Cercocebus_chrysogaster,
+		132 Cercocebus_agilis,
+		133 Macaca_cyclopis,
+		134 Macaca_sylvanus,
+		135 Euoticus_elegantulus,
+		136 Erythrocebus_patas,
+		137 Saimiri_ustus,
+		138 Aotus_griseimembra,
+		139 Aotus_lemurinus,
+		140 Aotus_vociferans,
+		141 Colobus_polykomos,
+		142 Papio_anubis,
+		143 Papio_cynocephalus,
+		144 Nomascus_gabriellae,
+		145 Mandrillus_leucophaeus,
+		146 Mandrillus_sphinx,
+		147 Microcebus_berthae,
+		148 Cebus_olivaceus,
+		149 Cebus_apella,
+		150 Cebus_capucinus,
+		151 Cebus_xanthosternos,
+		152 Pygathrix_nigripes,
+		153 Pygathrix_cinerea,
+		154 Lagothrix_cana,
+		155 Lagothrix_lagotricha,
+		156 Macaca_fuscata,
+		157 Saimiri_sciureus,
+		158 Aotus_nigriceps,
+		159 Aotus_nancymaae,
+		160 Perodicticus_potto,
+		161 Callicebus_caligatus,
+		162 Callicebus_moloch,
+		163 Saguinus_fuscicollis,
+		164 Saguinus_niger,
+		165 Saguinus_geoffroyi,
+		166 Saguinus_oedipus,
+		167 Saguinus_labiatus,
+		168 Saguinus_imperator,
+		169 Papio_kindae,
+		170 Papio_ursinus,
+		171 Papio_hamadryas,
+		172 Papio_papio,
+		173 Nomascus_leucogenys,
+		174 Microcebus_jollyae,
+		175 Microcebus_lokobensis,
+		176 Microcebus_tavaratra,
+		177 Microcebus_macarthurii,
+		178 Microcebus_rufus,
+		179 Indri_indri,
+		180 Cebus_albifrons,
+		181 Macaca_ochreata,
+		182 Macaca_arctoides,
+		183 Macaca_hecki,
+		184 Saimiri_boliviensis,
+		185 Saimiri_oerstedii,
+		186 Colobus_guereza,
+		187 Colobus_angolensis,
+		188 Callicebus_brunneus,
+		189 Callicebus_cupreus,
+		190 Callicebus_personatus,
+		191 Callicebus_coimbrai,
+		192 Saguinus_mystax,
+		193 Saguinus_midas,
+		194 Saguinus_martinsi,
+		195 Saguinus_bicolor,
+		196 Nomascus_concolor,
+		197 Nomascus_siki,
+		198 Microcebus_griseorufus,
+		199 Microcebus_arnholdi,
+		200 Microcebus_bongolavensis,
+		201 Microcebus_margotmarshae,
+		202 Microcebus_simmonsi,
+		203 Microcebus_gerpi,
+		204 Microcebus_myoxinus,
+		205 Microcebus_lehilahytsara,
+		206 Propithecus_tattersalli,
+		207 Propithecus_diadema,
+		208 Propithecus_coquereli,
+		209 Cheirogaleus_crossleyi,
+		210 Cheirogaleus_sibreei,
+		211 Cheirogaleus_major,
+		212 Cheirogaleus_medius,
+		213 Macaca_nigra,
+		214 Macaca_munzala,
+		215 Macaca_assamensis,
+		216 Macaca_sinica,
+		217 Macaca_mulatta,
+		218 Macaca_nemestrina,
+		219 Macaca_thibetana,
+		220 Callicebus_donacophilus,
+		221 Callicebus_nigrifrons,
+		222 Microcebus_murinus,
+		223 Microcebus_mamiratra,
+		224 Microcebus_mittermeieri,
+		225 Propithecus_verreauxi,
+		226 Propithecus_edwardsi,
+		227 Microcebus_danfossi,
+		228 Microcebus_ravelobensis;
+	TREE bestREP2 = [&U] (1:0.000000,(((6:0.001889,(8:0.000818,9:0.000592):0.000624,7:0.000943):0.001231,(((11:0.000057,12:0.000095):0.000533,10:0.000467):0.003511,((13:0.013428,(16:0.019015,((((((21:0.001309,22:0.002759):0.005106,19:0.006113):0.013485,((((29:0.001857,30:0.001844):0.000443,(31:0.000738,(41:0.000661,42:0.000438):0.000204):0.001840):0.032687,((32:0.013397,(((((79:0.003360,(87:0.005597,88:0.009336):0.002187):0.000180,74:0.003377):0.005322,67:0.009049):0.000634,55:0.008266):0.006036,(56:0.001722,57:0.000937):0.013761):0.003383):0.013039,(((((((89:0.001067,90:0.000874):0.000656,80:0.002393):0.000683,(81:0.007268,82:0.002248):0.000143):0.000591,68:0.003168):0.004670,(69:0.000844,70:0.002341):0.005385):0.002470,(58:0.025593,59:0.006676):0.003119):0.014320,((60:0.004957,61:0.004830):0.014562,((((((((148:0.001196,(179:0.010588,180:0.000338):0.000341):0.002360,(149:0.001072,150:0.001668,151:0.001706):0.001679):0.001448,((152:0.000469,153:0.000346):0.000383,125:0.000658):0.001798):0.007199,(103:0.012413,104:0.009729):0.005957):0.001071,((((154:0.000315,155:0.000423):0.009632,(((206:0.000849,207:0.000510):0.005787,(208:0.002359,(225:0.000000,226:0.000000):0.002779):0.004029):0.002479,((209:0.004539,210:0.000000):0.004881,(211:0.000000,212:0.000000):0.008305):0.000970):0.002647):0.001322,(126:0.000668,127:0.000470):0.011278):0.000132,((128:0.000941,129:0.000741):0.004631,(130:0.000228,131:0.000683,132:0.000264):0.004962):0.007190):0.000218):0.003448,((((133:0.004595,((181:0.002669,(213:0.002004,214:0.003740,215:0.003440):0.000602):0.000632,156:0.002813):0.001097):0.000913,105:0.005405):0.003734,(106:0.000642,107:0.000608,108:0.000633):0.008626):0.003440,((109:0.005121,(134:0.003704,(((216:0.001235,217:0.000662):0.001782,(218:0.001220,219:0.001026):0.001738):0.000405,(182:0.003666,183:0.003201):0.000105):0.000838):0.000459):0.004035,91:0.009840):0.002648):0.004505):0.004889,(((((135:0.001834,136:0.002421):0.002239,((157:0.000747,(184:0.000556,185:0.000215):0.000269):0.000494,137:0.000611):0.003796):0.003758,(110:0.000101,111:0.000228):0.007513):0.006673,(92:0.002676,93:0.002575):0.012351):0.005015,((((138:0.000974,139:0.002092):0.002171,112:0.002794):0.000091,(((158:0.000468,159:0.000293):0.001432,140:0.002618):0.001240,113:0.002704):0.001347):0.008164,((((160:0.003948,(186:0.002068,187:0.001418):0.001385):0.000295,141:0.003794):0.002245,((161:0.004275,162:0.004072):0.000170,((188:0.000000,189:0.000000):0.001515,(190:0.000573,191:0.001696,(220:0.000251,221:0.000424):0.000404):0.000869):0.003401):0.001562):0.001617,(((163:0.001860,(192:0.002609,193:0.001214):0.003186):0.002035,(164:0.028472,165:0.003250):0.000015):0.002117,((166:0.000273,167:0.000193):0.005034,((194:0.003650,195:0.000973):0.002446,168:0.002336):0.003493):0.002148):0.002003):0.003090):0.008222):0.000648):0.000289,(((((114:0.004027,115:0.000000,116:0.002386):0.000822,94:0.001545,95:0.003871):0.002482,(96:0.001310,97:0.000760):0.006014):0.007057,((98:0.000897,99:0.000975):0.007337,(((142:0.000532,143:0.001146):0.003459,((169:0.001255,170:0.002154):0.002298,(171:0.001494,172:0.000950):0.002317):0.000031):0.000169,(117:0.000333,118:0.000520,119:0.000547):0.004075):0.003588):0.004633):0.005820,((((((173:0.001039,(196:0.000388,197:0.000369):0.000687):0.000484,144:0.001163):0.001246,(145:0.001243,146:0.002556):0.000936):0.000297,(120:0.001866,121:0.001857):0.001762):0.002182,(100:0.001158,101:0.000199):0.004831):0.008896,((102:0.009942,(122:0.006574,123:0.001901):0.007199):0.003632,(((((198:0.002248,(222:0.001484,(227:0.000313,228:0.000504):0.000650):0.001072):0.004443,(199:0.003196,(223:0.002417,224:0.002647):0.002380):0.003494):0.001707,((200:0.000000,201:0.000397):0.005152,174:0.003999):0.005174):0.000495,((175:0.003546,176:0.000545):0.003301,((202:0.000948,203:0.005642):0.002103,(204:0.001692,205:0.001303):0.002302):0.000127):0.005041):0.005877,(((177:0.004107,178:0.000540):0.001404,147:0.001837):0.003813,124:0.005011):0.010251):0.001707):0.001225):0.002111):0.002811):0.001731):0.004878):0.003400):0.012876):0.005036,(((33:0.012132,(((((83:0.000110,84:0.000000):0.005422,(85:0.002426,86:0.007265):0.005150):0.000253,(75:0.000969,76:0.000000):0.006361):0.001935,62:0.006875):0.003007,43:0.014788):0.006257):0.002064,((44:0.000195,45:0.000000):0.004404,34:0.003720):0.018673):0.007110,((35:0.000753,36:0.002575):0.022347,((46:0.000430,47:0.000329):0.001468,37:0.002463):0.016954):0.005254):0.009820):0.008804):0.001126,(((23:0.000532,24:0.000394):0.004802,((25:0.026210,((48:0.006579,49:0.030110):0.002434,(((71:0.003497,72:0.000886):0.001079,63:0.001548):0.003624,50:0.007875):0.000583):0.001226):0.001820,(26:0.013510,((51:0.000000,52:0.001525):0.004632,38:0.007351):0.002699):0.000021):0.000349):0.005086,(20:0.016434,((27:0.003389,(((64:0.001583,65:0.001342):0.000144,53:0.001303):0.000684,39:0.002091):0.001506):0.005039,(((54:0.003663,(66:0.001149,((77:0.000000,78:0.000707):0.000519,73:0.000000):0.000973):0.001792):0.000509,40:0.002949):0.004071,28:0.007166):0.002008):0.000777):0.000821):0.007477):0.000867,18:0.014092):0.000353,17:0.019944):0.001497):0.003654):0.004177,(14:0.002118,15:0.002004):0.009845):0.006232):0.001018,5:0.002378):0.001822,4:0.001626):0.000464,2:0.000106,3:0.000586);
+END;
+BEGIN NOTES;
+[! Notes block written by Bio::Phylo::Project 0.58 on Tue Nov 24 14:13:43 2015 ]
+END;
