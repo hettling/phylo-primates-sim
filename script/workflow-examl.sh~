@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script runs phyml  on a mega-matrix generated from
+# This script runs raxml  on a mega-matrix generated from
 # simulation data. This script should be called from the top-level directory  
 
 # parse command-line arguments for simulation directory 
@@ -14,5 +14,5 @@ MEGAMATRIX="$WORKDIR/megamatrix.phy"
 cd $WORKDIR
 
 export SUPERSMART_NODES="64"
-smrt bbinfer -i phyml -b 100 -s $MEGAMATRIX -o megatree-phyml.dnd -w $WORKDIR -l infer-phyml.log -t $WORKDIR/taxa-replicated.tsv
+smrt bbinfer -i examl -b 100 -m -s $MEGAMATRIX -o megatree-examl.dnd -w $WORKDIR -l infer-raxml.log -t $WORKDIR/taxa-replicated.tsv
 

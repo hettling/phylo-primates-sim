@@ -18,4 +18,3 @@ MEGAMATRIX="$WORKDIR/megamatrix.nex"
 
 cd $WORKDIR
 mpirun -np 16 mb $MEGAMATRIX
-
