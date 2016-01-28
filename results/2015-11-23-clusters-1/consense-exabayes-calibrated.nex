@@ -1,0 +1,239 @@
+#NEXUS
+
+BEGIN TAXA;
+[! Taxa block written by Bio::Phylo::Taxa 0.58 on Thu Jan 28 14:21:40 2016 ]
+	
+        DIMENSIONS NTAX=111;
+        TAXLABELS
+		Alouatta_palliata
+		Alouatta_sara
+		Aotus_azarai
+		Aotus_nancymaae
+		Arctocebus_calabarensis
+		Ateles_belzebuth
+		Ateles_hybridus
+		Avahi_laniger
+		Avahi_occidentalis
+		Brachyteles_arachnoides
+		Brachyteles_hypoxanthus
+		Cacajao_calvus
+		Cacajao_melanocephalus
+		Cacajao_rubicundus
+		Callicebus_cupreus
+		Callicebus_moloch
+		Callimico_goeldii
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Cebus_olivaceus
+		Cebus_xanthosternos
+		Cercocebus_agilis
+		Cercocebus_atys
+		Cercopithecus_hamlyni
+		Cercopithecus_preussi
+		Cheirogaleus_crossleyi
+		Cheirogaleus_major
+		Chiropotes_albinasus
+		Chiropotes_satanas
+		Chlorocebus_aethiops
+		Chlorocebus_cynosuros
+		Colobus_guereza
+		Colobus_polykomos
+		Daubentonia_madagascariensis
+		Erythrocebus_patas
+		Eulemur_albifrons
+		Eulemur_coronatus
+		Euoticus_elegantulus
+		Galago_alleni
+		Galago_moholi
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Gorilla_beringei
+		Gorilla_gorilla
+		Hapalemur_aureus
+		Hapalemur_simus
+		Homo_sapiens
+		Hoolock_leuconedys
+		Indri_indri
+		Lagothrix_cana
+		Lagothrix_lagotricha
+		Lemur_catta
+		Leontopithecus_chrysomelas
+		Leontopithecus_rosalia
+		Lepilemur_ankaranensis
+		Lepilemur_jamesi
+		Lophocebus_albigena
+		Lophocebus_aterrimus
+		Loris_tardigradus
+		Macaca_sylvanus
+		Macaca_tonkeana
+		Mandrillus_leucophaeus
+		Mandrillus_sphinx
+		Microcebus_murinus
+		Microcebus_rufus
+		Miopithecus_talapoin
+		Mirza_coquereli
+		Mirza_zaza
+		Nasalis_larvatus
+		Nomascus_concolor
+		Nomascus_gabriellae
+		Nycticebus_bengalensis
+		Nycticebus_pygmaeus
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Pan_paniscus
+		Pan_troglodytes
+		Papio_anubis
+		Papio_papio
+		Perodicticus_potto
+		Phaner_furcifer
+		Piliocolobus_badius
+		Pithecia_irrorata
+		Pithecia_pithecia
+		Pongo_abelii
+		Pongo_pygmaeus
+		Presbytis_comata
+		Presbytis_melalophos
+		Procolobus_verus
+		Propithecus_tattersalli
+		Propithecus_verreauxi
+		Pygathrix_cinerea
+		Pygathrix_nigripes
+		Rhinopithecus_bieti
+		Rhinopithecus_roxellana
+		Rungwecebus_kipunji
+		Saguinus_labiatus
+		Saguinus_midas
+		Saimiri_boliviensis
+		Saimiri_ustus
+		Semnopithecus_entellus
+		Semnopithecus_hector
+		Simias_concolor
+		Symphalangus_syndactylus
+		Tarsius_syrichta
+		Tarsius_tarsier
+		Theropithecus_gelada
+		Trachypithecus_auratus
+		Trachypithecus_delacouri
+		Varecia_rubra
+		Varecia_variegata
+        ;
+END;
+BEGIN TREES;
+[! Trees block written by Bio::Phylo::Forest 0.58 on Thu Jan 28 14:21:40 2016 ]
+	TRANSLATE
+		1 Phaner_furcifer,
+		2 Ateles_belzebuth,
+		3 Ateles_hybridus,
+		4 Brachyteles_arachnoides,
+		5 Brachyteles_hypoxanthus,
+		6 Miopithecus_talapoin,
+		7 Tarsius_syrichta,
+		8 Tarsius_tarsier,
+		9 Varecia_rubra,
+		10 Varecia_variegata,
+		11 Loris_tardigradus,
+		12 Lemur_catta,
+		13 Hoolock_leuconedys,
+		14 Symphalangus_syndactylus,
+		15 Gorilla_gorilla,
+		16 Gorilla_beringei,
+		17 Alouatta_sara,
+		18 Alouatta_palliata,
+		19 Hapalemur_simus,
+		20 Hapalemur_aureus,
+		21 Nycticebus_bengalensis,
+		22 Nycticebus_pygmaeus,
+		23 Presbytis_melalophos,
+		24 Presbytis_comata,
+		25 Galagoides_demidoff,
+		26 Arctocebus_calabarensis,
+		27 Daubentonia_madagascariensis,
+		28 Homo_sapiens,
+		29 Procolobus_verus,
+		30 Eulemur_albifrons,
+		31 Eulemur_coronatus,
+		32 Macaca_sylvanus,
+		33 Macaca_tonkeana,
+		34 Galago_moholi,
+		35 Mirza_coquereli,
+		36 Mirza_zaza,
+		37 Piliocolobus_badius,
+		38 Callithrix_pygmaea,
+		39 Callithrix_jacchus,
+		40 Semnopithecus_entellus,
+		41 Semnopithecus_hector,
+		42 Rhinopithecus_roxellana,
+		43 Rhinopithecus_bieti,
+		44 Simias_concolor,
+		45 Pithecia_pithecia,
+		46 Pithecia_irrorata,
+		47 Callimico_goeldii,
+		48 Microcebus_murinus,
+		49 Microcebus_rufus,
+		50 Papio_papio,
+		51 Trachypithecus_auratus,
+		52 Trachypithecus_delacouri,
+		53 Euoticus_elegantulus,
+		54 Theropithecus_gelada,
+		55 Rungwecebus_kipunji,
+		56 Aotus_nancymaae,
+		57 Aotus_azarai,
+		58 Otolemur_crassicaudatus,
+		59 Cercopithecus_hamlyni,
+		60 Lophocebus_albigena,
+		61 Lophocebus_aterrimus,
+		62 Lepilemur_jamesi,
+		63 Lepilemur_ankaranensis,
+		64 Papio_anubis,
+		65 Cebus_xanthosternos,
+		66 Cebus_olivaceus,
+		67 Pygathrix_nigripes,
+		68 Pygathrix_cinerea,
+		69 Saguinus_midas,
+		70 Saguinus_labiatus,
+		71 Otolemur_garnettii,
+		72 Chlorocebus_aethiops,
+		73 Nasalis_larvatus,
+		74 Chiropotes_satanas,
+		75 Nomascus_gabriellae,
+		76 Nomascus_concolor,
+		77 Mandrillus_leucophaeus,
+		78 Mandrillus_sphinx,
+		79 Leontopithecus_rosalia,
+		80 Leontopithecus_chrysomelas,
+		81 Pan_troglodytes,
+		82 Pan_paniscus,
+		83 Cercocebus_agilis,
+		84 Cercocebus_atys,
+		85 Pongo_pygmaeus,
+		86 Pongo_abelii,
+		87 Saimiri_ustus,
+		88 Colobus_polykomos,
+		89 Callicebus_cupreus,
+		90 Callicebus_moloch,
+		91 Galago_alleni,
+		92 Galagoides_zanzibaricus,
+		93 Chlorocebus_cynosuros,
+		94 Cercopithecus_preussi,
+		95 Cacajao_calvus,
+		96 Cacajao_melanocephalus,
+		97 Chiropotes_albinasus,
+		98 Cacajao_rubicundus,
+		99 Indri_indri,
+		100 Avahi_occidentalis,
+		101 Avahi_laniger,
+		102 Cheirogaleus_crossleyi,
+		103 Cheirogaleus_major,
+		104 Propithecus_tattersalli,
+		105 Propithecus_verreauxi,
+		106 Erythrocebus_patas,
+		107 Saimiri_boliviensis,
+		108 Colobus_guereza,
+		109 Perodicticus_potto,
+		110 Lagothrix_cana,
+		111 Lagothrix_lagotricha;
+	TREE TREE1 = [&R] (((1[&length=76.163027,height=2.00000000916134E-6]:76.163027,(((((25[&length=32.954345,height=2.00000000916134E-6]:32.954345,(34[&height=2.00000000916134E-6,length=25.119446]:25.119446,((71[&height=2.00000000916134E-6,length=19.726287]:19.726287,(91[&length=10.919198,height=2.00000000916134E-6]:10.919198,92[&height=2.00000000916134E-6,length=10.919198]:10.919198)[&bootstrap=1,length=8.807089,height=10.919200000000004]:8.807089)[&length=0.719365,bootstrap=1,height=19.72628900000001]:0.719365,58[&length=20.445653,height=1.0000000116860974E-6]:20.445653)[&bootstrap=1,length=4.673794,height=20.44565400000001]:4.673794)[&bootstrap=1,length=7.834899,height=25.119448000000013]:7.834899)[&height=32.95434700000001,length=11.506529,bootstrap=1]:11.506529,((35[&height=2.00000000916134E-6,length=0.753725]:0.753725,36[&height=2.00000000916134E-6,length=0.753725]:0.753725)[&height=0.753727000000012,length=9.914646,bootstrap=1]:9.914646,26[&height=2.00000000916134E-6,length=10.668371]:10.668371)[&height=10.668373000000017,length=33.792503,bootstrap=1]:33.792503)[&bootstrap=1,length=7.280021,height=44.46087600000001]:7.280021,(21[&length=37.136202,height=2.00000000916134E-6]:37.136202,22[&length=37.136202,height=2.00000000916134E-6]:37.136202)[&height=37.13620400000001,bootstrap=1,length=14.604693]:14.604693)[&height=51.74089700000001,length=5.901475,bootstrap=1]:5.901475,6[&height=1.0000000116860974E-6,length=57.642371]:57.642371)[&height=57.64237200000001,bootstrap=1,length=10.671425]:10.671425,((((((59[&length=26.500969,height=1.0000000116860974E-6]:26.500969,(72[&length=10.477793,height=9.999999974752427E-7]:10.477793,(93[&height=9.999999974752427E-7,length=8.1101]:8.110100,94[&length=8.1101,height=9.999999974752427E-7]:8.110100)[&bootstrap=1,length=2.367693,height=8.110101]:2.367693)[&length=16.023176,bootstrap=1,height=10.477794000000003]:16.023176)[&height=26.50097000000001,length=10.569507,bootstrap=1]:10.569507,37[&height=1.0000000116860974E-6,length=37.070476]:37.070476)[&height=37.07047700000001,bootstrap=1,length=9.850849]:9.850849,27[&length=46.921325,height=1.0000000116860974E-6]:46.921325)[&height=46.92132600000001,bootstrap=1,length=4.04193]:4.041930,(28[&length=50.287831,height=1.0000000116860974E-6]:50.287831,29[&height=1.0000000116860974E-6,length=50.287831]:50.287831)[&height=50.28783200000001,bootstrap=1,length=0.675424]:0.675424)[&length=2.310967,bootstrap=1,height=50.96325600000001]:2.310967,(((38[&height=1.0000000116860974E-6,length=13.239516]:13.239516,39[&height=1.0000000116860974E-6,length=13.239516]:13.239516)[&height=13.239517000000006,length=1.761256,bootstrap=1]:1.761256,(40[&height=1.0000000116860974E-6,length=2.356441]:2.356441,41[&length=2.356441,height=1.0000000116860974E-6]:2.356441)[&height=2.3564420000000155,length=12.644331,bootstrap=1]:12.644331)[&height=15.00077300000001,length=16.536557,bootstrap=1]:16.536557,((42[&height=1.0000000116860974E-6,length=14.092558]:14.092558,43[&length=14.092558,height=1.0000000116860974E-6]:14.092558)[&length=14.091569,bootstrap=1,height=14.092559000000008]:14.091569,((((95[&length=6.722407,height=1.9999999949504854E-6]:6.722407,96[&length=6.722407,height=1.9999999949504854E-6]:6.722407)[&bootstrap=1,length=2.439925,height=6.722408999999999]:2.439925,73[&height=9.999999974752427E-7,length=9.162333]:9.162333)[&height=9.162334000000001,length=1.747521,bootstrap=1]:1.747521,((97[&height=9.999999974752427E-7,length=3.87183]:3.871830,98[&length=3.87183,height=9.999999974752427E-7]:3.871830)[&length=0.145932,bootstrap=1,height=3.8718310000000002]:0.145932,74[&height=9.999999974752427E-7,length=4.017762]:4.017762)[&height=4.017763000000002,bootstrap=1,length=6.892092]:6.892092)[&bootstrap=1,length=10.239295,height=10.909855000000007]:10.239295,44[&height=1.0000000116860974E-6,length=21.149149]:21.149149)[&length=7.034978,bootstrap=1,height=21.149150000000006]:7.034978)[&height=28.18412800000001,length=3.353202,bootstrap=1]:3.353202)[&bootstrap=1,length=21.736893,height=31.53733000000001]:21.736893)[&height=53.274223000000006,length=1.923528,bootstrap=1]:1.923528,((23[&length=6.377871,height=2.00000000916134E-6]:6.377871,24[&length=6.377871,height=2.00000000916134E-6]:6.377871)[&height=6.377873000000008,bootstrap=1,length=11.336366]:11.336366,14[&length=17.714238,height=1.0000000116860974E-6]:17.714238)[&length=37.483512,bootstrap=1,height=17.714239000000013]:37.483512)[&length=13.116046,bootstrap=1,height=55.19775100000001]:13.116046)[&length=7.849232,bootstrap=1,height=68.31379700000001]:7.849232)[&bootstrap=1,length=1.311981,height=76.16302900000001]:1.311981,(2[&height=2.00000000916134E-6,length=3.550414]:3.550414,3[&height=2.00000000916134E-6,length=3.550414]:3.550414)[&height=3.5504160000000127,bootstrap=1,length=73.924594]:73.924594)[&height=77.47501000000001,bootstrap=1,length=0.024992]:0.024992,(((((15[&height=1.0000000116860974E-6,length=5.412082]:5.412082,16[&height=1.0000000116860974E-6,length=5.412082]:5.412082)[&height=5.41208300000001,bootstrap=1,length=11.145574]:11.145574,(17[&length=7.05893,height=0.0]:7.058930,18[&length=7.05893,height=0.0]:7.058930)[&bootstrap=1,length=9.498727,height=7.058930000000004]:9.498727)[&height=16.557657000000006,bootstrap=1,length=6.374794]:6.374794,(7[&length=8.417651,height=1.0000000116860974E-6]:8.417651,8[&height=1.0000000116860974E-6,length=8.417651]:8.417651)[&bootstrap=1,length=14.514799,height=8.417652000000004]:14.514799)[&bootstrap=1,length=44.795399,height=22.932451000000007]:44.795399,((9[&height=1.0000000116860974E-6,length=16.344556]:16.344556,10[&length=16.344556,height=1.0000000116860974E-6]:16.344556)[&height=16.34455700000001,length=47.050866,bootstrap=1]:47.050866,(((((45[&height=1.0000000116860974E-6,length=3.212598]:3.212598,46[&height=1.0000000116860974E-6,length=3.212598]:3.212598)[&bootstrap=1,length=12.879671,height=3.2125990000000115]:12.879671,((60[&length=4.834864,height=1.0000000116860974E-6]:4.834864,61[&height=1.0000000116860974E-6,length=4.834864]:4.834864)[&height=4.834865000000008,length=4.452831,bootstrap=1]:4.452831,((75[&length=2.251351,height=1.0000000116860974E-6]:2.251351,76[&length=2.251351,height=1.0000000116860974E-6]:2.251351)[&height=2.2513520000000113,length=5.993979,bootstrap=1]:5.993979,(77[&height=9.999999974752427E-7,length=4.894934]:4.894934,78[&height=9.999999974752427E-7,length=4.894934]:4.894934)[&height=4.894935000000004,length=3.350396,bootstrap=1]:3.350396)[&height=8.245331000000007,bootstrap=1,length=1.042365]:1.042365)[&bootstrap=1,length=6.804574,height=9.287696000000011]:6.804574)[&length=31.520936,bootstrap=1,height=16.092270000000013]:31.520936,(((62[&length=15.082003,height=1.4210854715202004E-14]:15.082003,63[&height=1.4210854715202004E-14,length=15.082003]:15.082003)[&height=15.082003000000007,length=20.500206,bootstrap=1]:20.500206,47[&length=35.582209,height=1.4210854715202004E-14]:35.582209)[&height=35.582209000000006,bootstrap=1,length=6.985349]:6.985349,(48[&height=1.0000000116860974E-6,length=36.312513]:36.312513,49[&height=1.0000000116860974E-6,length=36.312513]:36.312513)[&bootstrap=1,length=6.255044,height=36.31251400000001]:6.255044)[&height=42.567558000000005,length=5.045648,bootstrap=1]:5.045648)[&height=47.613206000000005,length=5.142326,bootstrap=1]:5.142326,(((((79[&height=9.999999974752427E-7,length=1.509377]:1.509377,80[&height=9.999999974752427E-7,length=1.509377]:1.509377)[&bootstrap=1,length=9.491257,height=1.509377999999998]:9.491257,64[&height=9.999999974752427E-7,length=11.000634]:11.000634)[&height=11.000635000000003,length=0.641935,bootstrap=1]:0.641935,50[&height=1.0000000116860974E-6,length=11.642569]:11.642569)[&length=7.945944,bootstrap=1,height=11.642570000000006]:7.945944,(51[&length=3.08144,height=9.999999974752427E-7]:3.081440,52[&height=9.999999974752427E-7,length=3.08144]:3.081440)[&length=16.507073,bootstrap=1,height=3.081440999999998]:16.507073)[&height=19.588514000000004,length=16.292401,bootstrap=1]:16.292401,(30[&height=1.0000000116860974E-6,length=18.514573]:18.514573,31[&height=1.0000000116860974E-6,length=18.514573]:18.514573)[&height=18.51457400000001,length=17.366341,bootstrap=1]:17.366341)[&height=35.88091500000001,bootstrap=1,length=16.874617]:16.874617)[&height=52.75553200000001,bootstrap=1,length=8.791331]:8.791331,(((32[&length=33.951647,height=1.4210854715202004E-14]:33.951647,33[&height=1.4210854715202004E-14,length=33.951647]:33.951647)[&height=33.95164700000001,length=19.150734,bootstrap=1]:19.150734,((((81[&length=1.507305,height=2.00000000916134E-6]:1.507305,82[&length=1.507305,height=2.00000000916134E-6]:1.507305)[&height=1.5073070000000115,bootstrap=1,length=44.613605]:44.613605,((99[&length=40.065915,height=1.0000000116860974E-6]:40.065915,(110[&length=3.425852,height=9.999999974752427E-7]:3.425852,111[&length=3.425852,height=9.999999974752427E-7]:3.425852)[&height=3.4258530000000036,length=36.640063,bootstrap=1]:36.640063)[&length=4.418539,bootstrap=1,height=40.06591600000001]:4.418539,(100[&height=2.00000000916134E-6,length=28.884517]:28.884517,101[&length=28.884517,height=2.00000000916134E-6]:28.884517)[&bootstrap=1,length=15.599936,height=28.88451900000001]:15.599936)[&length=1.636457,bootstrap=1,height=44.48445500000001]:1.636457)[&height=46.120912000000004,length=0.376366,bootstrap=1]:0.376366,((83[&length=16.660814,height=1.0000000116860974E-6]:16.660814,84[&height=1.0000000116860974E-6,length=16.660814]:16.660814)[&height=16.660815000000007,length=19.866538,bootstrap=1]:19.866538,((102[&length=19.735121,height=2.00000000916134E-6]:19.735121,103[&length=19.735121,height=2.00000000916134E-6]:19.735121)[&height=19.735123,length=7.796582,bootstrap=1]:7.796582,(104[&height=1.0000000116860974E-6,length=18.282198]:18.282198,105[&length=18.282198,height=1.0000000116860974E-6]:18.282198)[&length=9.249506,bootstrap=1,height=18.282199000000006]:9.249506)[&height=27.531705000000002,bootstrap=1,length=8.995648]:8.995648)[&height=36.527353000000005,length=9.969925,bootstrap=1]:9.969925)[&bootstrap=1,length=0.098658,height=46.49727800000001]:0.098658,((65[&height=1.0000000116860974E-6,length=8.099553]:8.099553,66[&length=8.099553,height=1.0000000116860974E-6]:8.099553)[&height=8.099554000000012,bootstrap=1,length=5.223203]:5.223203,(67[&height=1.0000000116860974E-6,length=1.291244]:1.291244,68[&height=1.0000000116860974E-6,length=1.291244]:1.291244)[&height=1.2912450000000177,length=12.031512,bootstrap=1]:12.031512)[&bootstrap=1,length=33.273179,height=13.32275700000001]:33.273179)[&length=6.506445,bootstrap=1,height=46.59593600000001]:6.506445)[&height=53.10238100000001,length=7.91716,bootstrap=1]:7.917160,(((53[&length=42.72115,height=1.0000000116860974E-6]:42.721150,((85[&height=2.00000000916134E-6,length=0.943803]:0.943803,86[&length=0.943803,height=2.00000000916134E-6]:0.943803)[&length=25.98168,bootstrap=1,height=0.9438050000000118]:25.981680,((106[&length=17.080298,height=2.00000000916134E-6]:17.080298,107[&length=17.080298,height=2.00000000916134E-6]:17.080298)[&length=0.949319,bootstrap=1,height=17.08030000000001]:0.949319,87[&height=2.00000000916134E-6,length=18.029617]:18.029617)[&height=18.02961900000001,bootstrap=1,length=8.895866]:8.895866)[&length=15.795666,bootstrap=1,height=26.92548500000001]:15.795666)[&length=5.610733,bootstrap=1,height=42.721151000000006]:5.610733,(54[&height=2.00000000916134E-6,length=8.529521]:8.529521,55[&height=2.00000000916134E-6,length=8.529521]:8.529521)[&length=39.802361,bootstrap=1,height=8.529523000000012]:39.802361)[&length=10.811714,bootstrap=1,height=48.33188400000001]:10.811714,((((88[&height=2.00000000916134E-6,length=9.284094]:9.284094,(108[&height=2.00000000916134E-6,length=4.750131]:4.750131,109[&length=4.750131,height=2.00000000916134E-6]:4.750131)[&bootstrap=1,length=4.533963,height=4.750133000000005]:4.533963)[&height=9.284096000000005,length=7.827176,bootstrap=1]:7.827176,(89[&height=1.9999999949504854E-6,length=12.458498]:12.458498,90[&length=12.458498,height=1.9999999949504854E-6]:12.458498)[&height=12.4585,length=4.652772,bootstrap=1]:4.652772)[&length=6.837571,bootstrap=1,height=17.111272000000007]:6.837571,(69[&length=19.717752,height=2.00000000916134E-6]:19.717752,70[&length=19.717752,height=2.00000000916134E-6]:19.717752)[&height=19.717754000000006,bootstrap=1,length=4.231089]:4.231089)[&height=23.948843000000004,bootstrap=1,length=9.708137]:9.708137,(56[&length=11.631701,height=1.0000000116860974E-6]:11.631701,57[&length=11.631701,height=1.0000000116860974E-6]:11.631701)[&height=11.631702000000004,bootstrap=1,length=22.025278]:22.025278)[&height=33.656980000000004,length=25.486618,bootstrap=1]:25.486618)[&bootstrap=1,length=1.875943,height=59.14359800000001]:1.875943)[&bootstrap=1,length=0.527322,height=61.019541000000004]:0.527322)[&length=1.84856,bootstrap=1,height=61.54686300000001]:1.848560)[&height=63.39542300000001,bootstrap=1,length=4.332427]:4.332427)[&length=2.420264,bootstrap=1,height=67.72785]:2.420264,(((11[&length=28.447531,height=3.000000006636583E-6]:28.447531,(19[&length=12.763693,height=3.000000006636583E-6]:12.763693,20[&height=3.000000006636583E-6,length=12.763693]:12.763693)[&height=12.76369600000001,bootstrap=1,length=15.683838]:15.683838)[&height=28.447534000000005,bootstrap=1,length=6.955443]:6.955443,(12[&length=33.160922,height=2.00000000916134E-6]:33.160922,13[&length=33.160922,height=2.00000000916134E-6]:33.160922)[&height=33.16092400000001,bootstrap=1,length=2.242053]:2.242053)[&bootstrap=1,length=7.8193,height=35.40297700000001]:7.819300,(4[&height=2.00000000916134E-6,length=5.290003]:5.290003,5[&length=5.290003,height=2.00000000916134E-6]:5.290003)[&length=37.932272,bootstrap=1,height=5.290005000000008]:37.932272)[&height=43.222277000000005,bootstrap=1,length=26.925837]:26.925837)[&length=7.351888,bootstrap=1,height=70.148114]:7.351888)[&fossil_id=1,bootstrap=1,length=0.0,fossil_name=F_1,fossil_age={77.5,77.5},height=77.50000200000001];
+END;
+BEGIN NOTES;
+[! Notes block written by Bio::Phylo::Project 0.58 on Thu Jan 28 14:21:40 2016 ]
+END;
