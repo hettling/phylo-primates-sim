@@ -1,8 +1,10 @@
-stats.files <- c("results/alignment-stats-orig.tsv", "results/PRIMATES-1/alignment-stats.tsv", "results/PRIMATES-2/alignment-stats.tsv")#commandArgs(TRUE)
+#stats.files <- commandArgs(TRUE)
+
+stats.files <- c("results/alignment-stats-orig-clusters.tsv", "results/2015-11-23-clusters-1/alignment-stats.tsv")
 
 data <- lapply(stats.files, read.table, header=T)
 
-names(data) <- c('data', paste0('sim-', 1:(length(data)-1)))
+names(data) <- c('data', paste0('sim')) #-', 1:(length(data)-1)))
 
 ## scale ietms with percentage values
 for (i in seq(1, length(data))) {
@@ -11,39 +13,58 @@ for (i in seq(1, length(data))) {
     data[[i]][,'prop_invar'] <- data[[i]][,'prop_invar'] * 100
 }
 
-## define properties to plot
-##vars = c('nchar', 'gaps_per_seq', 'gap_freq', 'prop_invar', 'ntax')
- vars <- colnames(data[[1]])[- ( which(colnames(data[[1]]) %in% c('file', 'species')))]
+## summarize deletions and insertions to indels
 
-pdf('alnstats.pdf', width=12, height=10)
-par(mfrow=c(5,4))
+for (i in 1:length(data) ) {
+    data[[i]][['indel_count']] <- data[[i]]$ins_count + data[[i]]$del_count
+    data[[i]][['indel_avg_size']] <- (data[[i]]$del_avg_size + data[[i]]$ins_avg_size) / 2
+}
+
+
+## define properties to plot
+# vars <- colnames(data[[1]])[- ( which(colnames(data[[1]]) %in% c('file', 'species')))]
+vars <- c('avg_dist',  'prop_invar', 'indel_count', 'indel_avg_size',  'gaps_per_seq', 'gap_freq')
+
+pdf('alnstats.pdf', width=5, height=10)
+par(mfrow=c(4,2))
 
 # make name mapping for plot titles and axis labels
 mapping <- data.frame(row.names=colnames(data[[1]]))
 mapping$title <- 0;
 mapping$ylab <- 0;
-mapping['del_avg_size', 'title'] <- 'Average size of deletions in alignment'
+mapping['del_avg_size', 'title'] <- 'Average size of deletions\nper alignment'
 mapping['del_avg_size', 'ylab'] <- 'size (nucleotides)'
-mapping['del_count', 'title'] <- 'Number of deletions in alignment'
-mapping['del_count', 'ylab'] <- 'nucleotides'
+mapping['del_count', 'title'] <- 'Number of deletions\nper alignment'
+mapping['del_count', 'ylab'] <- 'count'
+
+mapping['indel_avg_size', 'title'] <- 'Average size of indels\nper alignment'
+mapping['indel_avg_size', 'ylab'] <- 'size (nucleotides)'
+mapping['indel_count', 'title'] <- 'Number of indels\nper alignment'
+mapping['indel_count', 'ylab'] <- 'count'
+
 mapping['gap_freq', 'title'] <- '% gaps per sequence'
 mapping['gap_freq', 'ylab'] <- '%'
-mapping['gaps_per_seq', 'title'] <- 'Number of gaps per sequence'
+mapping['gaps_per_seq', 'title'] <- 'Number of gaps\nper sequence'
 mapping['gaps_per_seq', 'ylab'] <- 'gap count'
-mapping['ins_avg_size', 'title'] <- 'Average size of insertions in alignment'
+
+mapping['ins_avg_size', 'title'] <- 'Average size of insertions\nper alignment'
 mapping['ins_avg_size', 'ylab'] <- 'size (nucleotides)'
-mapping['ins_count', 'title'] <- 'Number of insertions in alignment'
-mapping['ins_count', 'ylab'] <- 'nucleotides'
-mapping['nchar', 'title'] <- 'Number of nucleotides per sequence'
+mapping['ins_count', 'title'] <- 'Number of insertions\nper alignment'
+mapping['ins_count', 'ylab'] <- 'count'
+
+mapping['nchar', 'title'] <- 'Number of nucleotides\nper sequence'
 mapping['nchar', 'ylab'] <- 'nucleotides'
 mapping['ntax', 'title'] <- 'Number of taxa in alignment'
 mapping['ntax', 'ylab'] <- 'taxa'
-mapping['prop_invar', 'title'] <- '% of invariant sites per alignment'
+
+mapping['prop_invar', 'title'] <- '% of invariant sites\nper alignment'
 mapping['prop_invar', 'ylab'] <- '%'
+
 mapping['ident_pairs', 'title'] <- 'Identical sequences in alignment'
 mapping['ident_pairs', 'ylab'] <- 'number of identical pairs'
-mapping['avg_dist', 'title'] <- 'average distance in alignments'
-mapping['avg_dist', 'ylab'] <- 'relative distance'
+
+mapping['avg_dist', 'title'] <- 'average distance\nwithin alignment'
+mapping['avg_dist', 'ylab'] <- 'relative edit distance'
 
 
 
@@ -70,7 +91,7 @@ for (i in seq(1, length(data))) {
     df <- data.frame('species'=unique.specs, 'counts'=sapply(unique.specs, function(x)sum(specs==x)))
     spec.stats[[i]] <- df
 }
-boxplot(lapply(spec.stats, '[[', 'counts'), main="Number of alignments per species", ylab="alignments", names=names(data), cex.axis=1.2, cex.main=1.5, cex.lab=1.5)
+#boxplot(lapply(spec.stats, '[[', 'counts'), main="Number of alignments per species", ylab="alignments", names=names(data), cex.axis=1.2, cex.main=1.5, cex.lab=1.5)
 
 
 dev.off()
