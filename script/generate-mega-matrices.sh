@@ -16,7 +16,7 @@ WORKDIR="$PWD/results/$SIMNAME"
 # run the supersmart pipeline in the directory of the replicated dataset
 export SUPERSMART_BACKBONE_MAX_DISTANCE="0.2"
 export SUPERSMART_BACKBONE_MIN_COVERAGE="2"
-export SUPERSMART_BACKBONE_MAX_COVERAGE="10"
+export SUPERSMART_BACKBONE_MAX_COVERAGE="20"
 
 MERGED="merged-mega.txt"
 

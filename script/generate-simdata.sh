@@ -31,23 +31,27 @@ fi
 INTREE="$PWD/data/tree/final.nex"
 FOSSILS="$PWD/data/fossils/fossils.tsv"
 
+# take tree that was already replicated
+REPTREE="$PWD/data/tree/tree-replicated.dnd"
+
 # make file listing original alignments
 ALNS=$WORKDIR/aligned.txt
-for i in $( ls data/alignments/*.fa ); do echo $PWD/$i; done > $ALNS
+for i in $( ls data/alignments/*subtree.fa ); do echo $PWD/$i; done > $ALNS
 
 # copy files from previous SUPERSMART run necessary to replicate tree and data
 cp $INTREE $WORKDIR
+cp $REPTREE $WORKDIR
 cp $FOSSILS $WORKDIR
 cd $WORKDIR
 
 echo "$WORKDIR/replicate.log"
 
 # Replicate the dataset (final tree, taxa table and alignments)
-#smrt-utils replicate -t $INTREE -f nexus -a $ALNS -l "$WORKDIR/replicate.log" -v
+smrt-utils replicate -t $INTREE -f nexus -a $ALNS -l "$WORKDIR/replicate.log" -v -d -r "$WORKDIR/tree-replicated.dnd"
 
 # Make summary table of simulation data: 
 smrt-utils alnstats -a $WORKDIR/aligned-replicated.txt
 
 # insert simulated sequences and possible artificial taxa into the database
 # prefix for sequence accessions is the simulation directory
-#smrt-utils dbinsert -s aligned-replicated.txt -t taxa-replicated.tsv -p $SIMNAME -v -w $WORKDIR
+smrt-utils dbinsert -s aligned-replicated.txt -t taxa-replicated.tsv -p $SIMNAME -v -w $WORKDIR
