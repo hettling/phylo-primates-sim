@@ -23,7 +23,7 @@ MERGED="merged-mega.txt"
 smrt orthologize -i aligned-smrt-inserted.txt -o $MERGED -w $WORKDIR
 
 # phylip
-smrt bbmerge -t taxa-replicated.tsv -a $MERGED -e -1  -m markers-mega.tsv -f phylip -o megamatrix.phy -w $WORKDIR
+#smrt bbmerge -t taxa-replicated.tsv -a $MERGED -e -1  -m markers-mega.tsv -f phylip -o megamatrix.phy -w $WORKDIR
 
 # mrbayes
 smrt bbmerge -t taxa-replicated.tsv -a $MERGED -e -1  -m markers-mega.tsv -f mrbayes -o megamatrix.nex -w $WORKDIR

@@ -13,6 +13,6 @@ MEGAMATRIX="$WORKDIR/megamatrix.phy"
 
 cd $WORKDIR
 
-export SUPERSMART_NODES="64"
+export SUPERSMART_NODES="16"
 smrt bbinfer -i raxml -b 100 -r -s $MEGAMATRIX -o megatree-raxml.dnd -w $WORKDIR -l infer-raxml.log -t $WORKDIR/taxa-replicated.tsv
 

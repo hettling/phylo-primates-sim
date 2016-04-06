@@ -10,6 +10,8 @@ module load garli
 # parse command-line arguments for simulation directory 
 SIMNAME=$1
 
+export SUPERSMART_NODES=1
+
 # define files and directories
 WORKDIR="$PWD/results/$SIMNAME" 
 CONF="$PWD/script/garli.conf"

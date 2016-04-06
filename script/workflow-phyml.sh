@@ -11,8 +11,9 @@ WORKDIR="$PWD/results/$SIMNAME"
 
 MEGAMATRIX="$WORKDIR/megamatrix.phy"
 
+export SUPERMSART_NODES=64
+
 cd $WORKDIR
 
-export SUPERSMART_NODES="64"
-smrt bbinfer -i phyml -b 100 -s $MEGAMATRIX -o megatree-phyml.dnd -w $WORKDIR -l infer-phyml.log -t $WORKDIR/taxa-replicated.tsv
+smrt bbinfer -i phyml -v -b 100 -s $MEGAMATRIX -o megatree-phyml.dnd -w $WORKDIR -l infer-phyml.log -t $WORKDIR/taxa-replicated.tsv
 
