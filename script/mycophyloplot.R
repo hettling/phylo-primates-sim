@@ -65,6 +65,7 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
                             return = return, col = col, lwd = lwd, lty = lty, show.tip.label = show.tip.label,
                             font = font, exemplars=vector(), ...)
 {
+    
     res <- list()
     left <- max(nchar(x$tip.label, type = "width")) + length.line
     right <- max(nchar(y$tip.label, type = "width")) + length.line
@@ -102,55 +103,95 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
                      a[x$edge[i, 1], 2], a[x$edge[i, 2], 1], a[x$edge[i,
                                                                       2], 2] , lwd=1)
         }
-
+        
         ## Hannes: Color exemplars
-         for (i in 1:(nrow(b) - 1)) {
+        for (i in 1:(nrow(b) - 1)) {
             mycolor="black"
+
             child = y$edge[i, 2]
             terminals = get_terminals(y, child)
-             if (any (terminals %in% exemplars)) {
+            if (any (terminals %in% exemplars)) {
                 mycolor="red"
-            }
+            } 
             segments(b2[y$edge[i, 1],
                         1], b2[y$edge[i, 1], 2], b2[y$edge[i, 2], 1], b2[y$edge[i,
-                                                                                2], 2], col=mycolor, lwd=1)
+                                                                                2], 2], col=mycolor, lwd=lwd)
+            ## end Hannes
         }
-        # Hannes
-
     }
     if (type == "phylogram") {
         for (i in (N.tip.x + 1):nrow(a)) {
             l <- length(x$edge[x$edge[, 1] == i, ][, 1])
-            for (j in 1:l) {
+            for (j in 1:l) {               
                 segments(a[x$edge[x$edge[, 1] == i, ][1, 1],
-                  1], a[x$edge[x$edge[, 1] == i, 2], 2][1], a[x$edge[x$edge[,
-                  1] == i, ][1, 1], 1], a[x$edge[x$edge[, 1] ==
-                  i, 2], 2][j])
+                           1], a[x$edge[x$edge[, 1] == i, 2], 2][1], a[x$edge[x$edge[,
+                                                                                     1] == i, ][1, 1], 1], a[x$edge[x$edge[, 1] ==
+                                                                                                                        i, 2], 2][j], lwd=lwd)
                 segments(a[x$edge[x$edge[, 1] == i, ][1, 1],
-                  1], a[x$edge[x$edge[, 1] == i, 2], 2][j], a[x$edge[x$edge[,
-                  1] == i, 2], 1][j], a[x$edge[x$edge[, 1] ==
-                  i, 2], 2][j])
+                           1], a[x$edge[x$edge[, 1] == i, 2], 2][j], a[x$edge[x$edge[,
+                                                                                     1] == i, 2], 1][j], a[x$edge[x$edge[, 1] ==
+                                                                                                                      i, 2], 2][j], lwd=lwd)
             }
         }
-        for (i in (N.tip.y + 1):nrow(b)) {
+        for (i in (N.tip.y + 1):nrow(b)) {            
+            cat("i = ", i, "\n")
+            ## l is the number of children 
             l <- length(y$edge[y$edge[, 1] == i, ][, 1])
+            ## Hannes
+            mycolor="black"
+
+            cat("Exemplars : ", paste(exemplars, sep=", "), "\n")
+            terminals = get_terminals(y, i)
+
+            ## End Hannes
+            parent <- unique(y$edge[y$edge[, 1] == i, ][, 1])
+            children <- y$edge[y$edge[, 1] == i, ][, 2]
+
             for (j in 1:l) {
-                segments(b2[y$edge[y$edge[, 1] == i, ][1, 1],
-                  1], b2[y$edge[y$edge[, 1] == i, 2], 2][1],
-                  b2[y$edge[y$edge[, 1] == i, ][1, 1], 1], b2[y$edge[y$edge[,
-                    1] == i, 2], 2][j])
-                segments(b2[y$edge[y$edge[, 1] == i, ][1, 1],
-                  1], b2[y$edge[y$edge[, 1] == i, 2], 2][j],
-                  b2[y$edge[y$edge[, 1] == i, 2], 1][j], b2[y$edge[y$edge[,
-                    1] == i, 2], 2][j])
+                mycolor="red"
+                child <- children[j]
+                current.terminals <- get_terminals(y, child)
+                cat("current Terminals : ", paste(current.terminals, sep=", "), "\n")
+                if (any (current.terminals %in% exemplars)) {
+                    mycolor="red"
+                }
+                else {
+                    mycolor="black"
+                }
+                ##                cat("Parent : ", parent, " i = ", i, "\n")                
+                cat("Child : ", child, "\n")                
+                
+                ## vertical lines
+                x0 <- b2[y$edge[y$edge[, 1] == i, ][1, 1],1]
+                y0 <- b2[y$edge[y$edge[, 1] == i, 2], 2][1]
+                x1 <- b2[y$edge[y$edge[, 1] == i, ][1, 1], 1]
+                y1 <- b2[y$edge[y$edge[,1] == i, 2], 2][j]
+
+                y.from <- b2[y$edge[y$edge[,1] == i, 2], 2][j]
+                y.to <- mean(b2[y$edge[y$edge[,1] == i, 2], 2])
+                                
+                cat ("vertical : ", paste(x0, y0, x1, y1, sep=" ,"), "\n")
+                cat("y from : ", y.from, " y to : ", y.to, "\n")
+                
+                ##if (j==2) {recover()}
+                segments(x0,y.from,x1,y.to, col=mycolor, lwd=lwd)
+
+                ## horizontal lines                
+                xx0 <- b2[y$edge[y$edge[, 1] == i, ][1, 1],1]
+                yy0 <- b2[y$edge[y$edge[, 1] == i, 2], 2][j]
+                xx1 <- b2[y$edge[y$edge[, 1] == i, 2], 1][j]
+                yy1 <- b2[y$edge[y$edge[,1] == i, 2], 2][j]
+                cat ("horizontal : ", paste(xx0, yy0, xx1, yy1, sep=" ,"), "\n")
+                segments(xx0, yy0, xx1, yy1, col=mycolor, lwd=lwd)
+                
             }
         }
 
     }
     if (show.tip.label) {
-        text(a[1:N.tip.x, ], cex = 0, font = font, pos = 4, labels = x$tip.label)
+        text(a[1:N.tip.x, ], cex = 0, font = font, pos = 4, labels = x$tip.label)        
         text(b2[1:N.tip.y, ], cex = 1, font = font, pos = 2,
-            labels = y$tip.label)
+            labels = y$tip.label, col=ifelse(y$tip.label %in% exemplars, "red", "black"))
     }
     lsa <- 1:N.tip.x
     lsb <- 1:N.tip.y
