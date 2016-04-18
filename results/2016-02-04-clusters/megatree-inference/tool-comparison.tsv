@@ -1,0 +1,6 @@
+tool	robinson-foulds	robinson-foulds-normalized	sq-euclidean	sq-euclidean-normalized
+ExaML	82	0.331	7208.7	29.068
+RaXML	106	0.38	15455	55.39
+Garli	102	0.368	15310.9	55.27
+PhyML	364	0.89	37003	90
+supersmart	76	0.309	10780	55.39
