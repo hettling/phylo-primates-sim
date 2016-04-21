@@ -1,3 +1,7 @@
+## This script defines a modified version of ape's 'cophyloplot', named
+## 'mycolphyloplot'. The modified function can take an additional set of taxa,
+## branches and taxon names for these taxa are then colored in red.
+
 
 mycophyloplot <- function (x, y, assoc = NULL, use.edge.length = FALSE, space = 0,
                          length.line = 1, gap = 2, type = "phylogram", rotate = FALSE,
@@ -104,7 +108,6 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
                                                                       2], 2] , lwd=1)
         }
         
-        ## Hannes: Color exemplars
         for (i in 1:(nrow(b) - 1)) {
             mycolor="black"
 
@@ -116,7 +119,6 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
             segments(b2[y$edge[i, 1],
                         1], b2[y$edge[i, 1], 2], b2[y$edge[i, 2], 1], b2[y$edge[i,
                                                                                 2], 2], col=mycolor, lwd=lwd)
-            ## end Hannes
         }
     }
     if (type == "phylogram") {
@@ -134,32 +136,24 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
             }
         }
         for (i in (N.tip.y + 1):nrow(b)) {            
-            cat("i = ", i, "\n")
             ## l is the number of children 
             l <- length(y$edge[y$edge[, 1] == i, ][, 1])
-            ## Hannes
+
             mycolor="black"
-
-            cat("Exemplars : ", paste(exemplars, sep=", "), "\n")
             terminals = get_terminals(y, i)
-
-            ## End Hannes
+            
             parent <- unique(y$edge[y$edge[, 1] == i, ][, 1])
             children <- y$edge[y$edge[, 1] == i, ][, 2]
 
             for (j in 1:l) {
-                mycolor="red"
                 child <- children[j]
                 current.terminals <- get_terminals(y, child)
-                cat("current Terminals : ", paste(current.terminals, sep=", "), "\n")
                 if (any (current.terminals %in% exemplars)) {
                     mycolor="red"
                 }
                 else {
                     mycolor="black"
                 }
-                ##                cat("Parent : ", parent, " i = ", i, "\n")                
-                cat("Child : ", child, "\n")                
                 
                 ## vertical lines
                 x0 <- b2[y$edge[y$edge[, 1] == i, ][1, 1],1]
@@ -169,11 +163,7 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
 
                 y.from <- b2[y$edge[y$edge[,1] == i, 2], 2][j]
                 y.to <- mean(b2[y$edge[y$edge[,1] == i, 2], 2])
-                                
-                cat ("vertical : ", paste(x0, y0, x1, y1, sep=" ,"), "\n")
-                cat("y from : ", y.from, " y to : ", y.to, "\n")
-                
-                ##if (j==2) {recover()}
+                                                
                 segments(x0,y.from,x1,y.to, col=mycolor, lwd=lwd)
 
                 ## horizontal lines                
@@ -181,7 +171,6 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
                 yy0 <- b2[y$edge[y$edge[, 1] == i, 2], 2][j]
                 xx1 <- b2[y$edge[y$edge[, 1] == i, 2], 1][j]
                 yy1 <- b2[y$edge[y$edge[,1] == i, 2], 2][j]
-                cat ("horizontal : ", paste(xx0, yy0, xx1, yy1, sep=" ,"), "\n")
                 segments(xx0, yy0, xx1, yy1, col=mycolor, lwd=lwd)
                 
             }
@@ -190,7 +179,7 @@ myplotCophylo2 <- function (x, y, assoc = assoc, use.edge.length = use.edge.leng
     }
     if (show.tip.label) {
         text(a[1:N.tip.x, ], cex = 0, font = font, pos = 4, labels = x$tip.label)        
-        text(b2[1:N.tip.y, ], cex = 1, font = font, pos = 2,
+        text(b2[1:N.tip.y, ], cex = 0, font = font, pos = 2,
             labels = y$tip.label, col=ifelse(y$tip.label %in% exemplars, "red", "black"))
     }
     lsa <- 1:N.tip.x
